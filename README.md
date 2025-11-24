@@ -37,6 +37,9 @@ NUM_SAMPLES = 200
 MODEL_NAME = "models/gemini-2.5-flash"
 OUTPUT_DIRECTORY = "turtle_training_data"
 
+You can also change the width and height in generate_turtle_code, it is standardized to make the ouptut all the same size 
+screen.setup(width=384, height=384)
+
 You can also update the prompts array in promptsData.py.
 
 ▶️Running the Script
