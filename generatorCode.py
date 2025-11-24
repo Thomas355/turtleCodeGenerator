@@ -84,12 +84,15 @@ Follow these exact constraints:
 import turtle as t
 import random
 t.colormode(255)
+screen = t.Screen()
+screen.setup(width=384, height=384)
 r = random.randint(0, 255)
 g = random.randint(0, 255)
 b = random.randint(0, 255)
 t.speed(0)
 t.bgcolor(r, g, b)
 t.tracer(0, 0)
+
 
 3) Code must end with:
 
@@ -143,7 +146,7 @@ def edit_and_polish_code(code: str, tries: int = 2) -> str:
 Edit and polish the following Python turtle code.
 
 Requirements:
-- Keep required header (imports, colormode, tracer).
+- Keep required header (imports, colormode, tracer, screen).
 - Keep required footer (t.hideturtle(), t.update(), t.done()).
 - Improve structure, remove inefficiencies.
 - Output ONLY runnable Python code.
